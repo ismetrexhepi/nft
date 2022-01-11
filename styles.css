@@ -1,0 +1,175 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+###
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* Primary */
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+  
+}
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--mainBG);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.container {
+    background-color: var(--cardBG) ;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.images {
+    width:310px;
+    height:310px;
+    position: relative;
+    top:0;
+    left:0;
+}
+.first {
+    width:100%;
+    height:100%;
+    background-color: var(--cyan);
+    position: relative;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.second {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 5px;
+    /* opacity: 50%; */
+}
+
+.second:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.title {
+    color:var(--white);
+    font-weight: 600px;
+}
+
+.title:hover {
+    color:var(--cyan);
+    cursor: pointer;
+}
+
+.description {
+    color:var(--white);
+    opacity: 50%;
+    /* font-size: 14px; */
+    font-weight: 300px;
+}
+.portoflio {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    opacity: 50%;
+    border-bottom: 2px solid var(--line);
+    margin-bottom:1rem;
+    padding-bottom:1rem;
+}
+
+.portoflio span {
+    display: flex;
+    align-items: center;
+   
+}
+.portoflio img {
+    padding-right:5px;
+}
+.eth {
+    color: var(--cyan);
+    font-weight: 600;
+
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.avatar {
+    height:32px;
+    width:32px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.avat-text {
+    color:rgba(255,255,255,0.5);
+    /* opacity: 50%; */
+    
+}
+
+.author {
+    color:rgba(255,255,255,1);
+
+}
+
+.author:hover {
+    color:var(--cyan);
+    cursor:pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
